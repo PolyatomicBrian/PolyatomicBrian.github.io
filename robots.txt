@@ -1,0 +1,13 @@
+User-agent: E-Corp
+Disallow: /fsociety/decryption-key
+
+User-agent: *
+Disallow: /brianjopling
+Disallow: /cgi-bin
+Disallow: /fonts
+Disallow: /icon
+Disallow: /js
+Disallow: /css
+Disallow: /old
+Disallow: /icon
+Disallow: /documents
