@@ -111,7 +111,7 @@
             <div class="container">
               <div class="row text-center">
                   <p class="projects-preface">
-                   Below are some of the projects I've deemed worthy of being on my beautiful website.<br>
+                   Below are some of my (mostly FOSS) projects I've deemed worthy of being on my beautiful website.<br>
                    To see more, <a href="https://github.com/PolyatomicBrian">visit me on GitHub</a>!
                   </p>
                   <div class="container">
@@ -126,6 +126,17 @@
                 <br><br>
              </div>
            </div>
+          <!-- Study Buddy -->
+          <div class="container row">
+          <a href="http://www.cci.drexel.edu/SeniorDesign/2019_2020/Study-Buddy/Study-Buddy-index.html"><img src="img/studybuddy.png" class="projectImage img-rounded" alt="Study Buddy, Brian Jopling"></a>
+          <p class="projectTitle">&nbsp;<a href="http://www.cci.drexel.edu/SeniorDesign/2019_2020/Study-Buddy/Study-Buddy-index.html">Study Buddy</a></p><br><br>
+          <p class="projectDescription"><a href="http://www.cci.drexel.edu/SeniorDesign/2019_2020/Study-Buddy/Study-Buddy-index.html">Study Buddy</a> is a designed-for-mobile web application featuring a chatbot powered by machine learning that answers questions based on photos of your textbook pages, using OCR.
+            Study Buddy was my final project at Drexel. <i>It won first place in the 2019-2020 Drexel Senior Project Showcase's Entrepreneurial Category.</i> I worked in a team of 6 as the project manager, architect, and DevOps engineer.
+            Ontop of designing the project's architecture, I automated it as Infrastructure as Code using AWS CloudFormation. Study Buddy uses serverless infrastructure such as Lambda, S3, RDS, SageMaker, and API Gateway.
+            I also created (and automated) a CICD Pipeline using AWS Code Pipeline and Code Build in order to automatically deploy changes to the frontend and changes to the backend.<br>
+            The Infrastructure as Code (AWS CloudFormation templates) can be found on <a href="https://github.com/PolyatomicBrian/StudyBuddy-Infrastructure">GitHub</a>.
+          </p>
+          </div><br>
           <!-- NECTOR -->
           <div class="container row">
           <a href="https://github.com/clayball/nector"><img src="img/nector.png" class="projectImage img-rounded" alt="NECTOR, Brian Jopling"></a>
@@ -141,6 +152,26 @@
             <br>Source code available on <a href="https://github.com/clayball/nector">GitHub</a>.
           </p>
           </div><br>
+          <!-- S/Key OTP -->
+        <div class="container row">
+          <a href="https://github.com/PolyatomicBrian/SKey-OTP"><img src="img/skey.png" class="projectImage img-rounded" alt="SKey OTP, Brian Jopling"></a>
+          <p class="projectTitle">&nbsp;<a href="https://github.com/PolyatomicBrian/SKey-OTP">SKey OTP</a></p><br><br>
+          <p class="projectDescription"><a href="https://github.com/PolyatomicBrian/SKey-OTP">SKey OTP</a> is an implementation of <a href="https://tools.ietf.org/html/rfc1760">RFC1760</a>, aka the S/KEY One-Time Password System, with a
+            slightly modified algorithm for generating OTPs, written in Python 3.
+            This project consists of a client, a server, and a script for generating a shared secret. The project was modeled very similarly to how MFA hardware tokens are designed and used; that is, the client (the hardware token) and the server each know the same secret and perform the same operation on that secret in order to generate the same OTP.
+            In creating this project, <a href="https://www.rfc-editor.org/errata_search.php?rfc=1760">I also contributed to the RFC errata in order to report editorial mistakes in RFC1760.</a><br>
+            Source code available on <a href="https://github.com/PolyatomicBrian/SKey-OTP">GitHub</a>.
+          </p>
+          </div><br>
+          <!-- AWS API Gateway & Cognito AuthZ Heartbeat -->
+          <div class="container row">
+            <a href="https://github.com/PolyatomicBrian/AWS-APIGW-Cognito-Heartbeat"><img src="img/heartbeat.png" class="projectImage img-rounded" alt="AWS API Gateway & Cognito AuthZ Heartbeat, Brian Jopling"></a>
+            <p class="projectTitle">&nbsp;<a href="https://github.com/PolyatomicBrian/AWS-APIGW-Cognito-Heartbeat">AWS API Gateway w/ Cognito AuthZ Heartbeat Lambda Function</a></p><br><br>
+            <p class="projectDescription"><a href="https://github.com/PolyatomicBrian/AWS-APIGW-Cognito-Heartbeat">AWS API Gateway w/ Cognito AuthZ Heartbeat Lambda Function</a> is (besides a mouthful of a name) a Lambda function that programmatically sends a request to every resource in an API Gateway mapping that requires Cognito authorization.<br>
+              This Lambda function was designed to provide a realtime heartbeat of an API I had setup, in order for me to create a Kibana dashboard to show the uptime of that API.<br>
+            <br>Source code available on <a href="https://github.com/PolyatomicBrian/AWS-APIGW-Cognito-Heartbeat">GitHub</a>.
+            </p>
+            </div><br>
           <!-- Drop-Fuzz -->
           <div class="container row">
           <a href="https://github.com/sas-isus/drop-fuzz"><img src="img/dropfuzz.png" class="projectImage img-rounded" alt="Drop-Fuzz, Brian Jopling"></a>
@@ -162,18 +193,6 @@
           <br>Available for <a href="projects/games/The Cave of Trials/Windows/The Cave of Trials.zip">Windows</a>, <a href="projects/games/The Cave of Trials/Mac/The Cave of Trials.zip">Mac</a>, and <a href="https://play.google.com/store/apps/details?id=com.Team84.TheCaveOfTrials">Android</a> devices.
           </p>
         </div><br>
-        <!-- Mark -->
-        <div class="container row">
-        <img src="img/mark.png" class="projectImage img-rounded" alt="Mark, Brian Jopling">
-        <p class="projectTitle">&nbsp;<a style="color:black; text-decoration:none">Mark</a></p><br><br>
-        <p class="projectDescription">Mark is a 2D graphic adventure game that tells a heartfelt story about a man named Mark whose wife has mysteriously disappeared.
-        A friend and I created this game during the Spring Break of our first year at college. I wrote the script and did the storyboarding, and also did the programming in C# using the Unity Game Engine.
-        My friend, Andrew Mainhart, did all the art. The two of us live in different states, so our communication was limited to Skype calls and texting.
-        Creating this game taught me how to work with someone over the web, rather than in-person.
-        In the game itself, you play as Mark as he remembers how significant his wife's role was in his life, and uncover the mystery of what had happened on the night she disappeared.
-        <br>Available for <a href="https://www.dropbox.com/s/yfw09lmzd90otwz/Mark.zip?dl=0">Windows</a> and <a href="https://www.dropbox.com/s/v2swqi1t3nf2m42/Mark.app.zip?dl=0">Mac</a> devices.
-        </p>
-        </div><br>
         <!-- Coin Grabber -->
         <div class="container row">
         <a href="https://play.google.com/store/apps/details?id=com.Brian.CoinGrabber"><img src="img/coingrabber.png" class="projectImage img-rounded" alt="Coin Grabber, Brian Jopling"></a>
@@ -182,7 +201,7 @@
           You'll tap and tap, gaining riches which can be used to purchase upgrades and power-ups that will help you grab even more coins.
           Wanna be fashionable while grabbing coins? Coin Grabber also features various cosmetics that can be purchased using the coins you grab in-game.
           Once you start grabbing coins, you'll never wanna stop.
-          <br>I created this game during the summer of 2015 in order to learn the process of making and publishing an app to the app store. I wrote this app in C# using the Unity Game Engine.
+          <br>I created this game right after graduating high school in order to learn the process of making and publishing an app to the app store. I wrote this app in C# using the Unity Game Engine.
           <br>Available for <a href="https://play.google.com/store/apps/details?id=com.Brian.CoinGrabber">Android</a> devices.
         </p>
       </div><br>
@@ -195,29 +214,6 @@
           In The Sawyer Trail, you take control of a party of 5 that is traveling in a school bus to a hack-a-thon. You must make sure the people in your party do not starve, all while you worry about the bus having enough fuel to finish the journey.<br>
           The game prides itself on its replayability, as no two games will ever be alike due to the factor of randomness. With humorous dialogue, a unique story, and hours of entertainment, it's no wonder all my classmates loved this game.
         <br>Source code available on <a href="https://github.com/PolyatomicBrian/The-Sawyer-Trail">GitHub</a>.
-        </p>
-        </div><br>
-        <!-- Reddit Spelling Checker -->
-        <div class="container row">
-        <a href="https://github.com/PolyatomicBrian/Reddit-Spelling-Checker-Bot/blob/master/myBot.py"><img src="img/redditspellchecker.png" class="projectImage img-rounded" alt="Reddit Spelling Checker Bot, Brian Jopling"></a>
-        <p class="projectTitle">&nbsp;<a href="https://github.com/PolyatomicBrian/Reddit-Spelling-Checker-Bot/blob/master/myBot.py">Reddit Spelling Bot</a></p><br><br>
-        <p class="projectDescription">
-            <a href="https://github.com/PolyatomicBrian/Reddit-Spelling-Checker-Bot/blob/master/myBot.py">Reddit Spelling Bot</a> is an automated tool used to help ensure that the word "spelling" would always be spelled the right way on <a href="http://www.reddit.com">Reddit</a>.
-            If someone makes a comment that contains the word "speeling" or "speling" in it, then the bot will comment to that person with the correct spelling.
-            The bot was written in Python, and it was the first automated tool I'd ever created. To make this bot, I used the PRAW library, which is an acronym for "Python Reddit API Wrapper." It was surprisingly simple to write the bot, and it only required 30 lines of code.
-            The code can easily be changed to allow the bot to search for any other key word or phrase, and comment with whatever the programmer would like it to say.
-            <br>Source code available on <a href="https://github.com/PolyatomicBrian/Reddit-Spelling-Checker-Bot/blob/master/myBot.py">GitHub</a>.
-        </p>
-        </div><br>
-        <!-- Forbidden File Brute Forcer -->
-        <div class="container row">
-        <a href="https://github.com/PolyatomicBrian/Forbidden-File-Brute-Forcer/blob/master/bruteforce.py"><img src="img/bruteforcer.png" class="projectImage img-rounded" alt="Forbidden File Brute Forcer, Brian Jopling"></a>
-        <p class="projectTitle">&nbsp;<a href="https://github.com/PolyatomicBrian/Forbidden-File-Brute-Forcer/blob/master/bruteforce.py">File Brute Forcer</a></p><br><br>
-        <p class="projectDescription">
-          <a href="https://github.com/PolyatomicBrian/Forbidden-File-Brute-Forcer/blob/master/bruteforce.py">File Brute Forcer</a> is a program that will append words from a dictionary to the end of an entered URL in an attempt at brute forcing a website to obtain access to forbidden files from a website.
-          If any of the words and their extensions are found in the URL's directory, the program will then write them to a new text file to ensure the user does not lose them.
-          The program was written in Python, and was thrown together during the Steam Summer Sale of 2016 to help the community figure out whether or not Valve was hosting an <a href="https://en.wikipedia.org/wiki/Alternate_reality_game">ARG</a> during the event.
-          <br>Source code available on <a href="https://github.com/PolyatomicBrian/Forbidden-File-Brute-Forcer/blob/master/bruteforce.py">GitHub</a>.
         </p>
         </div><br>
         </p>
